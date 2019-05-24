@@ -1,0 +1,13 @@
+version: 2
+jobs: 
+  build:
+    docker:
+      - image: circleci/ruby:2.4.1
+      - image: postgres:9.4.1
+    steps:
+      - checkout
+      - run:
+          name: Deploy the Master to Heroku
+          command:  |
+            git push https://heroku:df2a271f-b601-4f67-9c41-cb4c72e06568@git.heroku.com/sleepy-mesa-49365.git master
+  
