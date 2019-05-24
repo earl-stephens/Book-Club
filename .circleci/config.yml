@@ -8,6 +8,6 @@ jobs:
     steps:
       - checkout
       - run:
-        name: Deploy Master to Heroku
-        command:  |
-          git push https://heroku:df2a271f-b601-4f67-9c41-cb4c72e06568@git.heroku.com/https://sleepy-mesa-49365.git master
+          name: Deploy Master to Heroku
+          command:  |
+            git push https://heroku:df2a271f-b601-4f67-9c41-cb4c72e06568@git.heroku.com/https://sleepy-mesa-49365.git master
